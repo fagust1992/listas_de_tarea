@@ -24,7 +24,7 @@ for(index in array_tareas){
   array_tareas[index].id=i;
   html+=`
   
-<li> ${array_tareas[index].nombre} <h6> ${array_tareas[index].valor_statu} </6>  <button class="" onclick="cambiarestado(${array_tareas[index].id})">cambiar estado</button> <button onclick="borrar(${array_tareas[index].id})">borrar</button></li>
+<li> <h4>${array_tareas[index].id} </h4> <h4>Tarea:${array_tareas[index].nombre}</h4> <h5> ${array_tareas[index].valor_statu} </h5>  <button class="" onclick="cambiarestado(${array_tareas[index].id})">cambiar estado</button> <button onclick="borrar(${array_tareas[index].id})">borrar</button></li>
 
   `
  
