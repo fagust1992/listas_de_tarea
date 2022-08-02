@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <title>todo list</title>
+  </head>
+  <body>
+  <div class="container">
+    <h3>Lista de Tareas</h3>
+    <hr>
+        <input id="nuevo" type="text" />
+     
+        <button id="agregar">Agregar</button>
+    
+      
+    
+        <div class="padre">
+       
+          <div class="total">
+              
+          </div>
+          <div class="otro">
+
+          </div>
+          <ul class="servicios">
+            
+          </ul>
+        </div>
+  </div>
+
+    
+   
+    <script src="js.js"></script>
+    <!--3 -->
+    
+  </body>
+
+  <style>
+    li{
+      list-style: none;
+    }
+
+.container{
+ background:  rgb(129, 125, 125);
+}
+    .padre{
+      display: flex;
+      background: rgb(129, 125, 125);
+    }
+.estados1{
+  background: rgb(129, 125, 125);
+  width: 200px;
+  height: 150px;
+
+}
+.servicios{
+  display: flex;
+  background: rgb(129, 125, 125);
+  width: 1200px;
+  gap: 5px;
+}
+.servicios li {
+list-style: none;
+}
+#agregar {
+  background: rgb(247, 235, 235); ;
+  margin-bottom: 20px;
+}
+
+  </style>
+</html>
