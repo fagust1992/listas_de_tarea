@@ -9,18 +9,18 @@ const array_tareas=[
 
 ]
 i=603;
-realizada=0
+
 function mostrandoarryas() {
   const selecionando_ul= document.querySelector(".servicios")
   const total=document.querySelector(".total")
 
-  console.log(total)
+
    let html="";
    let total1="";
 
 for(index in array_tareas){
   i++
-  realizada++
+ 
   array_tareas[index].id=i;
   html+=`
   
@@ -66,18 +66,25 @@ boton_agregar.addEventListener("click", () => {
     mostrandoarryas()
 
    }
+   l=0
    function cambiarestado(idtarea) {
-
-    for(index in array_tareas){
  
+    for(index in array_tareas){
+      
+      
       const variable=array_tareas[index];
       const indexservicio=array_tareas.findIndex((nose)=> nose.id==idtarea)
       if(idtarea== variable.id ){
+        l++
+
         array_tareas.splice(indexservicio,1,{id:idtarea,nombre:array_tareas[index].nombre,statu:true,valor_statu:"realizada"})
-        
+       
       }
      
     }
+    var otro= document.querySelector(".otro")
+   otro.innerHTML="realizadas:"+l
+   
  mostrandoarryas()
 
   }
